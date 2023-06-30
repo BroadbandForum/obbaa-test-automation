@@ -1,0 +1,9 @@
+        <config>
+            <network-manager xmlns="urn:bbf:yang:obbaa:network-manager">
+                <managed-devices>
+                    <device xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0" xc:operation="remove">
+                    <name>{{ deviceName }}</name>
+                    </device>
+                </managed-devices>
+            </network-manager>
+        </config>

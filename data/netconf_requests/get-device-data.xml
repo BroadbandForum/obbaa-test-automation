@@ -1,0 +1,10 @@
+    <filter type="subtree">
+      <network-manager xmlns="urn:bbf:yang:obbaa:network-manager">
+        <managed-devices>
+          <device>
+            <name>{{ deviceName }}</name>
+              <root/>
+          </device>
+        </managed-devices>
+      </network-manager>
+    </filter>

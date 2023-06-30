@@ -1,0 +1,3 @@
+<filter type="subtree">
+    <if:interfaces xmlns:if="urn:ietf:params:xml:ns:yang:ietf-interfaces"/>
+</filter>

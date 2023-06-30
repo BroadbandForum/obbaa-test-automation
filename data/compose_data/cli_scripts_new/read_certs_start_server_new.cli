@@ -1,0 +1,2 @@
+/polt/set client_server=client enable=yes
+/log/n name=POLT log_level_print=DEBUG log_level_save=DEBUG

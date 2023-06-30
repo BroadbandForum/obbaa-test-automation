@@ -1,0 +1,27 @@
+          <config>
+            <network-manager xmlns="urn:bbf:yang:obbaa:network-manager">
+                <managed-devices>
+                    <device>
+                       <name>{{ deviceName }}</name>
+                        <root>
+                            <hardware xmlns="urn:ietf:params:xml:ns:yang:ietf-hardware">
+                                <!-- olt-side  uplink hardware -->
+                                <component>
+                                    <name>uplink_port</name>
+                                    <class xmlns:bbf-hwt="urn:bbf:yang:bbf-hardware-types">bbf-hwt:transceiver-link</class>
+                                </component>
+                            </hardware>
+                            <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+                                <!-- olt-side  uplink interface -->
+                                <interface>
+                                    <name>uplink_port_intf</name>
+                                    <enabled>true</enabled>
+                                    <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+                                    <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">uplink_port</port-layer-if>
+                                </interface>
+                            </interfaces>
+                        </root>
+                    </device>
+                </managed-devices>
+            </network-manager>
+        </config>
