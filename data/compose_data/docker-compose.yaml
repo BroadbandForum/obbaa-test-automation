@@ -56,7 +56,7 @@ services:
           ipv4_address: 172.27.0.3
 
     vomci1:
-      image: broadbandforum/obbaa-vomci:master
+      image: broadbandforum/obbaa-vomci:latest
       hostname: obbaa-vomci1
       container_name: obbaa-vomci1
       ports:
@@ -82,7 +82,7 @@ services:
         - kafka
 
     vomci2:
-      image: broadbandforum/obbaa-vomci:master
+      image: broadbandforum/obbaa-vomci:latest
       hostname: obbaa-vomci2
       container_name: obbaa-vomci2
       ports:
@@ -145,7 +145,7 @@ services:
           ipv4_address: 172.27.0.6
 
     vproxy:
-      image: broadbandforum/obbaa-vproxy:master
+      image: broadbandforum/obbaa-vproxy:latest
       hostname: obbaa-vproxy
       container_name: obbaa-vproxy
       ports:
@@ -173,7 +173,7 @@ services:
         - vomci2
 
     baa:
-      image: broadbandforum/baa:master
+      image: broadbandforum/baa:latest
       container_name: baa
       restart: always
       ports:
@@ -229,7 +229,7 @@ services:
           ipv4_address: 172.27.0.11
 
     onu-pm-collector:
-      image: broadbandforum/onu-pm-collector:master
+      image: broadbandforum/onu-pm-collector:latest
       container_name: onu-pm-collector
       restart: always
       ports:
